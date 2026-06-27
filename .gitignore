@@ -1,0 +1,11 @@
+# Secrets / environment (contains DB credentials etc.)
+wp-config.php
+.env
+
+# Logs
+*.log
+wp-content/debug.log
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
