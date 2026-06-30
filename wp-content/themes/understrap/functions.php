@@ -27,6 +27,7 @@ $understrap_includes = array(
 	'/editor.php',                          // Load Editor functions.
 	'/block-editor.php',                    // Load Block Editor functions.
 	'/deprecated.php',                      // Load deprecated functions.
+	'/works-post-type.php',                 // Register the "Works" custom post type, taxonomy and meta fields.
 );
 
 // Load WooCommerce functions if WooCommerce is activated.
