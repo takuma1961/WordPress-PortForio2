@@ -8,6 +8,27 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
+add_filter( 'theme_mod_understrap_sidebar_position', function( $position ) {
+	if ( is_woocommerce() || is_cart() || is_checkout() || is_account_page() ) {
+		return 'none';
+	}
+	return $position;
+} );
+
+add_action( 'wp_enqueue_scripts', 'understrap_enqueue_woocommerce_corporate_style' );
+if ( ! function_exists( 'understrap_enqueue_woocommerce_corporate_style' ) ) {
+	function understrap_enqueue_woocommerce_corporate_style() {
+		if ( is_woocommerce() || is_cart() || is_checkout() || is_account_page() ) {
+			wp_enqueue_style(
+				'woocommerce-corporate',
+				get_theme_file_uri( 'css/woocommerce-corporate.css' ),
+				array( 'understrap-styles' ),
+				'1.0.0'
+			);
+		}
+	}
+}
+
 add_action( 'after_setup_theme', 'understrap_woocommerce_support' );
 if ( ! function_exists( 'understrap_woocommerce_support' ) ) {
 	/**
