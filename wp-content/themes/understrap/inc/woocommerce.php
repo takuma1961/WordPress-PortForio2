@@ -29,6 +29,7 @@ if ( ! function_exists( 'understrap_enqueue_woocommerce_corporate_style' ) ) {
 	}
 }
 
+
 add_action( 'after_setup_theme', 'understrap_woocommerce_support' );
 if ( ! function_exists( 'understrap_woocommerce_support' ) ) {
 	/**

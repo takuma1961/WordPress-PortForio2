@@ -136,6 +136,9 @@ get_header();
 
 <div class="contact-wrap">
 
+	<!-- Sub Navigation -->
+	<?php get_template_part( 'global-templates/dc-subnav' ); ?>
+
 	<!-- Hero -->
 	<section class="contact-hero">
 		<h1>お問い合わせ</h1>
