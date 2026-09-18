@@ -1,5 +1,6 @@
 # Secrets / environment (contains DB credentials etc.)
 wp-config.php
+wp-config-production.php
 .env
 
 # Logs
