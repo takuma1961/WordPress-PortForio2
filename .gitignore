@@ -13,3 +13,5 @@ Thumbs.db
 
 # 作業計画メモ（ローカルのみ）
 docs/plans/
+docs/PROJECT_STRUCTURE.md
+docs/LocalDbExport/
