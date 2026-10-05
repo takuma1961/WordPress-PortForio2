@@ -1,5 +1,6 @@
 # Secrets / environment (contains DB credentials etc.)
 wp-config.php
+wp-config-production.php
 .env
 
 # Logs
@@ -9,3 +10,13 @@ wp-content/debug.log
 # OS / editor junk
 .DS_Store
 Thumbs.db
+
+# Claude Code ローカル個人設定
+.claude/settings.local.json
+
+# 作業計画メモ（ローカルのみ）
+docs/plans/
+docs/PROJECT_STRUCTURE.md
+docs/LocalDbExport/
+docs/pw.txt
+claude.md
