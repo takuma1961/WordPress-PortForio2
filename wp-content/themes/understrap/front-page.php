@@ -11,9 +11,9 @@
 <section id="about" class="scroll-slide" style="padding:80px 20px; max-width:800px; margin:0 auto;">
 	<h2 style="font-size:1.8rem; margin-bottom:24px;">About</h2>
 	<p>本業ではシステムエンジニア、副業としてWordPressサイトの制作を行っています。</p>
-	<a href="http://word-press.local/carrer/" style="color:#888;">詳しい経歴はこちら→</a>
+	<a href="<?php echo esc_url( home_url( '/carrer/' ) ); ?>" style="color:#888;">詳しい経歴はこちら→</a>
 	<br>
-	<a href="http://word-press.local/self-introduction/" style="color:#888;">自己紹介はこちら→</a>
+	<a href="<?php echo esc_url( home_url( '/self-introduction/' ) ); ?>" style="color:#888;">自己紹介はこちら→</a>
 </section>
 
 <!-- Skills -->
@@ -21,7 +21,7 @@
 	<div style="max-width:1000px; margin:0 auto;">
 		<h2 style="font-size:1.8rem; margin-bottom:8px;">Skills</h2>
 		<p style="font-size:0.9rem; color:#888; margin-bottom:32px;">
-			<a href="http://word-press.local/works/" style="color:#888;">詳しいスキル一覧はこちら →</a>
+			<a href="<?php echo esc_url( home_url( '/works/' ) ); ?>" style="color:#888;">詳しいスキル一覧はこちら →</a>
 		</p>
 		<div style="display:grid; grid-template-columns:repeat(3,1fr); gap:20px;">
 			<div class="scroll-slide" style="background:#fff; border:1px solid #eee; border-radius:8px; padding:20px;">
